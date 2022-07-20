@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    color: azure;
+    background: black;
+    font-family: 'Mingzat';
+    width: 100%;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+  
+}
+
+
+#nav{
+    display: flex;
+    width: 90%;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.nav h1{
+    font-size: 5em;
+    margin: 40px;
+    line-height: 100px;
+}
+
+
+#p01{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: chocolate;
+}
+#categoria{
+    display: flex;
+    width: 300px;
+    
+    
+}
+
+#categoria ul{
+    list-style: none;
+    margin: 20px;
+
+}
+
+#categoria img{
+    width: 30px;
+    height: 96px;
+    
+}
+
+#nav-itens{
+    list-style: none;
+    display: flex;
+   
+
+}
+#nav-itens li {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+
+}
+
+#header01{
+    
+height: 1300px;
+width: 100%;
+background: url(../img/header-grande.png) no-repeat center center/cover;
+
+}
+
+.titulo01{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: 600px;
+    color: rgba(39, 39, 39, 0.692);
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: .5em;
+}
+
+.titulo{
+width: 80%;
+align-items: center;
+display: flex;
+padding: 50px;
+}
+
+.about{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.resumo{
+display: flex;
+justify-content: space-around;
+width: 100%;
+align-items:flex-start;
+height: 500px;
+}
+
+
+
+.resumo img{
+margin: 15px;
+}
+
+.abouts{
+    width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    font-size: 1em;
+}
+
+.abouts p{
+   width: 400px; 
+}
+
+.abouts h3{
+    font-size: 2.3em;
+}
+
+#scroll{
+    background: url(../img/imagem.png) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 80%;
+    width: 90%;  
+}
+.scroll{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+}
+.temporadas{
+
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 800px;
+
+
+}
+.lista-de-temporadas{
+    display: flex;
+    width: 1500px;
+    justify-content: space-around
+}
+.descriçao{
+    width: 400px;
+    height: 300px;
+   
+}
+
+.numero{
+    font-size: 10em;
+    
+}
+
+
+.elenco-01{
+height: 800px;
+align-items: center;
+display: flex;
+justify-content: space-around;
+
+
+}
+.elenco{
+height: 350px;
+width: 250px;   
+
+}
+
+.elenco-img{
+background: rgb(255, 255, 255);
+height: 300px;
+width: 250px;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+.ator{
+    font-weight: bold;
+}
+
+.titulo02{
+width: 100%;
+align-items: center;
+display: flex;
+height: 100px;
+color: white;
+font-size: 1.1em;
+letter-spacing: .5em;
+}
+
+.titulo-01{
+width: 80%;
+align-items: center;
+display: flex;
+padding: 50px;
+color: white;
+}
+
+
+.bordas{
+border-top: 1px solid rgb(255, 252, 252);
+width: 98%;
+height: 10px;
+margin: auto; 
+}
+
+
+.derivados{
+    height: 300px;
+    
+}
+
+#derivados{
+    font-family:"Cormorant";
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+    color: rgb(66, 62, 62);
+    height: 500px;
+    align-items: center;
+
+}
+
+
+#derivados p{
+    max-width: 350px;
+}
+/*--------------Temporadas*/
+.box-temporadas{
+   display: list-item;
+}
+
+
+.caixa-slide{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.fas{
+width: 17px;
+
+}
+
+
+
+
+
+.slide{
+    width: 1024px;
+    height: 576px;
+    overflow: hidden;/*Para esconder*/
+    border-radius: 15px;
+    transition: all 0.4s;
+}
+
+.slides{
+    width: 5120px;
+    display: flex;   
+}
+
+.image {
+width: 1024px;
+height: 576px;
+
+
+}
+
+#atual{
+       /*Para as imagens irem passando bota o transition */
+transition: all 2s;
+}
+
+
+.btn{
+
+
+
+
+width: 5px;
+    color: rgb(67, 247, 76);
+    background-color: black;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    align-items: center;
+   
+
+
+}
+
+
+
+
+.btn:hover{
+transform: scale(1.5);
+
+}
+
+.balls{
+    position: absolute;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+    display: flex;
+
+}
+
+.balls div{
+    transition: all 0.5s;
+    border: 3px solid white;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right:15px ;
+    cursor: pointer;
+}
+
+.balls div:hover{
+background: wheat;
+}
+
+.imgAtual{
+    transition: all 0.5s;
+    background: wheat;
+}
+
+::-webkit-scrollbar-track { background-color: #242424;
+}
+/*Fundo que corre */
+::-webkit-scrollbar { width: 6px; background: #F4F4F4;
+}
+/* Linha que desce */
+::-webkit-scrollbar-thumb { background: #ffffff;
+    border-radius: 15px;
+}
+
+/*Slide elenco*/
+
+.main-scroll-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    
+}
+
+.cover {
+    position: relative;
+    width: 80%;
+    height: 50%;
+}
+
+.cover::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(90deg, black, transparent);
+}
+
+.cover::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(-90deg, black, transparent);
+}
+
+.scroll-images {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.child {
+    min-width: 600px;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.scroll-images::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: none;
+}
+
+
+.child-img {
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    color: rgb(67, 247, 76);
+    background-color: black;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.icon:hover {
+    color: yellow;
+}
